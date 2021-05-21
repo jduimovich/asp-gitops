@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: dev-app-a-simple-app-a-simple-app-binding
+  namespace: cicd
+spec:
+  params:
+  - name: imageRepo
+    value: docker.io/jduimovich/asp-gitops
+  - name: tlsVerify
+    value: "true"
+status: {}
